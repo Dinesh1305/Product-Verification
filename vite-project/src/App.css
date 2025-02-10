@@ -1,45 +1,89 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #000; /* Changed to black */
-  color: white; /* Optional: Change text color for contrast */
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #333; /* Dark text for contrast */
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 600px;
-  margin: 20px auto;
-  background: #222; /* Darker background for better contrast */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1); /* Adjusted for dark theme */
+  max-width: 700px;
+  margin: 40px auto;
+  background: #f9f9f9; /* Light gray container for subtle contrast */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  text-align: center;
 }
 
 h1 {
   text-align: center;
-  color: white; /* Change to white for better contrast */
+  color: #333; /* Darker text */
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #555; /* Darker border */
-  border-radius: 5px;
-  background-color: #333; /* Dark input field */
-  color: white; /* White text */
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin: 12px 0;
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 6px;
+  background-color: #ffffff; /* White input field */
+  color: #333;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
+input:focus {
+  outline: none;
+  border-color: #ff5722; /* Orange focus effect */
+  box-shadow: 0px 0px 8px rgba(255, 87, 34, 0.5);
+}
+
+/* Modern Button Styles */
 button {
   width: 100%;
-  padding: 10px;
-  background-color: #007bff;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #ff5722; /* Vibrant Orange */
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 4px 10px rgba(255, 87, 34, 0.3);
 }
 
 button:hover {
-  background-color: #0056b3;
+  background: #e64a19; /* Darker orange on hover */
+  box-shadow: 0px 4px 15px rgba(230, 74, 25, 0.5);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Navbar Buttons */
+.navbar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navbar button {
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  margin: 5px;
+  background: #4CAF50; /* Green buttons */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px rgba(76, 175, 80, 0.3);
+}
+
+.navbar button:hover {
+  background: #388E3C; /* Darker green on hover */
+  box-shadow: 0px 0px 10px rgba(56, 142, 60, 0.8);
 }

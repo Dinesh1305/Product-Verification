@@ -85,6 +85,7 @@ contract Products {
      
     function removeProduct(address company, string memory productHash) external {
         require(salesmen[company][msg.sender] == true, "Only an authorized salesman can remove products");
+         require(products[company][productHash] == true, "The product not in the blockchain");
         delete products[company][productHash];
     }
 }

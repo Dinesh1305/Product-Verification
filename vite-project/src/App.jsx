@@ -9,7 +9,7 @@ import User from "./components/User";
 import abi from "./Json/Products.json";
 
 const contractABI = abi.abi;
-const contractAddress = "0x5424D9e81e0Ad39fb00Fe43d650eE7995D49cE07";
+const contractAddress = "0x6bF73827A8C3B3AE83Be87d187Eac6436F3DC249";
 
 const App = () => {
   const [web3, setWeb3] = useState(null);
