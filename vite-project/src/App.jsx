@@ -7,6 +7,7 @@ import ManufacturingUnit from "./components/ManufacturingUnit";
 import Salesman from "./components/Salesman";
 import User from "./components/User";
 import abi from "./Json/Products.json";
+import "./styles.css"; // Importing CSS file for styling
 
 const contractABI = abi.abi;
 const contractAddress = "0x6bF73827A8C3B3AE83Be87d187Eac6436F3DC249";
@@ -40,18 +41,15 @@ const App = () => {
         <h1>Product Verification System</h1>
         <p>Connected Account: {account}</p>
 
-        <div className="button-container">
-         { /*
-          <Link to="/owner"><button>Owner</button></Link>
-          */}
-          <Link to="/company"><button>Company</button></Link>
-          <Link to="/manufacturing"><button>Manufacturing Unit</button></Link>
-          <Link to="/salesman"><button>Salesman</button></Link>
-          <Link to="/user"><button>User</button></Link>
-        </div>
+        {/* Styled Navigation Bar */}
+        <nav className="nav-bar">
+          <Link to="/company">Company</Link>
+          <Link to="/manufacturing">Manufacturing Unit</Link>
+          <Link to="/salesman">Salesman</Link>
+          <Link to="/user">User</Link>
+        </nav>
 
         <Routes>
-          
           <Route path="/owner" element={<Owner contract={contract} account={account} />} />
           <Route path="/company" element={<Company contract={contract} account={account} />} />
           <Route path="/manufacturing" element={<ManufacturingUnit contract={contract} account={account} />} />
