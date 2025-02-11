@@ -1,20 +1,94 @@
+/* Container */
+.container {
+    background: white;
+    padding: 30px;
+    width: 60%;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
 /* Navigation Bar */
 .nav-bar {
-    background-color: #333; /* Dark background */
+    background-color: #222;
     display: flex;
-    justify-content: center; /* Center-align links */
-    padding: 15px 0;
-  }
-  
-  .nav-bar a {
+    justify-content: center;
+    padding: 12px 0;
+    border-radius: 8px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar a {
     color: white;
     text-decoration: none;
     margin: 0 20px;
     font-size: 18px;
     font-weight: bold;
-  }
-  
-  .nav-bar a:hover {
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-bar a:hover {
+    color: #007BFF; /* Changed hover color to blue */
     text-decoration: underline;
-  }
-  
+}
+
+/* Active (selected) tab */
+.nav-bar a.active {
+    color: #007BFF !important; /* Blue instead of yellow */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Form Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #007BFF; /* Changed border focus color to blue */
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Buttons */
+button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button hover effect - Now Blue */
+button:hover {
+    background: #007BFF; /* Changed hover color to blue */
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Button focus/active state - Now Blue */
+button:focus,
+button:active {
+    background: #007BFF !important; /* Blue when clicked/touched */
+    color: white !important;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Remove default touch highlight on mobile */
+button {
+    -webkit-tap-highlight-color: transparent;
+}
