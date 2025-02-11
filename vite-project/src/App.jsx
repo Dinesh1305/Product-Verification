@@ -41,7 +41,9 @@ const App = () => {
         <p>Connected Account: {account}</p>
 
         <div className="button-container">
+         { /*
           <Link to="/owner"><button>Owner</button></Link>
+          */}
           <Link to="/company"><button>Company</button></Link>
           <Link to="/manufacturing"><button>Manufacturing Unit</button></Link>
           <Link to="/salesman"><button>Salesman</button></Link>
@@ -49,6 +51,7 @@ const App = () => {
         </div>
 
         <Routes>
+          
           <Route path="/owner" element={<Owner contract={contract} account={account} />} />
           <Route path="/company" element={<Company contract={contract} account={account} />} />
           <Route path="/manufacturing" element={<ManufacturingUnit contract={contract} account={account} />} />
