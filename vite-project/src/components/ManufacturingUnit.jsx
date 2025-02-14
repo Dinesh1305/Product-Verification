@@ -27,7 +27,7 @@ const ManufacturingUnit = ({ contract, account }) => {
         <h3>Add Product</h3>
         <input
           type="text"
-          placeholder="Product Hash"
+          placeholder="Product Key"
           onChange={(e) => setProductHash(e.target.value)}
         />
         <input

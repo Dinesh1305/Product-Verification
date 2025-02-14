@@ -32,7 +32,7 @@ const User = ({ contract }) => {
         />
         <input
           type="text"
-          placeholder="Product Hash"
+          placeholder="Product Key"
           onChange={(e) => setCheckProductHash(e.target.value)}
         />
         <button onClick={checkProduct}>Check Product</button>

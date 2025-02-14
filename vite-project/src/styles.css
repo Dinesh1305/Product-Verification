@@ -10,7 +10,7 @@
 
 /* Navigation Bar */
 .nav-bar {
-    background-color: #222;
+    background-color: #2E7D32; /* Dark Green */
     display: flex;
     justify-content: center;
     padding: 12px 0;
@@ -31,13 +31,13 @@
 }
 
 .nav-bar a:hover {
-    color: #007BFF; /* Changed hover color to blue */
+    color: #4CAF50; /* Green */
     text-decoration: underline;
 }
 
 /* Active (selected) tab */
 .nav-bar a.active {
-    color: #007BFF !important; /* Blue instead of yellow */
+    color: #4CAF50 !important; /* Green */
     font-weight: bold;
     text-decoration: underline;
 }
@@ -54,14 +54,14 @@ input {
 }
 
 input:focus {
-    border-color: #007BFF; /* Changed border focus color to blue */
+    border-color: #4CAF50; /* Green */
     outline: none;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
 }
 
 /* Buttons */
 button {
-    background: black;
+    background: #388E3C; /* Green */
     color: white;
     border: none;
     padding: 12px 18px;
@@ -72,20 +72,20 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
-/* Button hover effect - Now Blue */
+/* Button hover effect */
 button:hover {
-    background: #007BFF; /* Changed hover color to blue */
+    background: #2E7D32; /* Darker Green */
     color: white;
     transform: scale(1.05);
 }
 
-/* Button focus/active state - Now Blue */
+/* Button focus/active state */
 button:focus,
 button:active {
-    background: #007BFF !important; /* Blue when clicked/touched */
+    background: #1B5E20 !important; /* Dark Green when clicked */
     color: white !important;
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 5px rgba(27, 94, 32, 0.5);
 }
 
 /* Remove default touch highlight on mobile */

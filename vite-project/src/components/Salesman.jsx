@@ -24,7 +24,7 @@ const Salesman = ({ contract, account }) => {
         />
         <input
           type="text"
-          placeholder="Product Hash"
+          placeholder="Product Key"
           onChange={(e) => setRemoveProductHash(e.target.value)}
         />
         <button onClick={removeProduct}>Remove Product</button>
