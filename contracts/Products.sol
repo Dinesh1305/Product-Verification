@@ -20,7 +20,7 @@ contract Products {
     
     // Mapping to store salesmen under each company
     mapping(address => mapping(address => bool)) private salesmen;
-
+    
     /**
      * @dev Checks if a product exists in the blockchain.
      * @param company The address of the company.
